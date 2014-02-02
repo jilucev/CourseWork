@@ -5,16 +5,15 @@ def ask question
 
 		if (reply == 'yes' || reply =='no')
 			if reply == 'yes'
-				answer = true
-			else 
-				answer = false
+				return true
 			end
-			break
-		else
+				return false
+			end
 			puts 'Please answer "yes" or "no".'
 		end
 	end
-	answer # return value, true or false
+	likes_it = ask 'Do you like eating tacos?'
+	puts likes_it
 end
 puts 'Hello, and thank you for...'
 puts
